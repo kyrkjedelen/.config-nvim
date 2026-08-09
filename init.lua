@@ -94,6 +94,9 @@ end
 do
   -- [[ Basic Keymaps ]]
   --  See `:help vim.keymap.set()`
+  vim.keymap.set('n', '<leader>r', ':update<CR> :source<CR>', { desc = '[R]efresh nvim config' })
+  vim.keymap.set('n', '<leader>w', ':write<CR>', { desc = '[W]rite buffer to file (:w)' })
+  vim.keymap.set('n', '<leader>e', ':quit<CR>', { desc = '[E]xit Neovim (:q)' })
 
   -- Clear highlights on search when pressing <Esc> in normal mode
   --  See `:help hlsearch`
