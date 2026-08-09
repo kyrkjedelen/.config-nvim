@@ -620,8 +620,6 @@ do
     -- But for many setups, the LSP (`ts_ls`) will work just fine
     -- ts_ls = {},
 
-    stylua = {}, -- Used to format Lua code
-
     -- Special Lua Config, as recommended by neovim help docs
     lua_ls = {
       on_init = function(client)
@@ -712,10 +710,11 @@ do
       end
     end,
     default_format_opts = {
-      lsp_format = 'fallback', -- Use external formatters if configured below, otherwise use LSP formatting. Set to `false` to disable LSP formatting entirely.
+      lsp_format = 'never', -- Use external formatters if configured below, never use LSP formating
     },
     -- You can also specify external formatters in here.
     formatters_by_ft = {
+      lua = { 'stylua' },
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
