@@ -601,7 +601,7 @@ do
     clangd = {},
     -- gopls = {},
     -- pyright = {},
-    -- rust_analyzer = {},
+    rust_analyzer = {},
     -- ts_ls = {},
     tinymist = {},
 
@@ -705,8 +705,8 @@ do
       markdown = { 'markdownlint' },
       typst = { 'typstyle' },
       c = { 'clang-format' },
-      cpp = { 'clang-format' }
-      -- rust = { 'rustfmt' },
+      cpp = { 'clang-format' },
+      rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
