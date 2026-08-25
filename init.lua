@@ -700,6 +700,12 @@ do
     -- You can also specify external formatters in here.
     formatters_by_ft = {
       lua = { 'stylua' },
+      html = { 'biome', },
+      json = { 'biome' },
+      markdown = { 'markdownlint' },
+      typst = { 'typstyle' },
+      c = { 'clang-format' },
+      cpp = { 'clang-format' }
       -- rust = { 'rustfmt' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
